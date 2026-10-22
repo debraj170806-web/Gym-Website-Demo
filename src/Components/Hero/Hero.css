@@ -1,0 +1,164 @@
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 25px;
+  padding: 60px 5%;
+  min-height: 620px;
+  background: #080808;
+}
+
+/* Left side */
+.hero-text {
+  flex: 0 0 48%;
+  max-width: 520px;
+}
+
+.hero-label {
+  color: #FFD43B;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  color: #F5F5F5;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: clamp(48px, 5vw, 72px);
+  font-weight: 900;
+  line-height: 0.98;
+  margin: 0;
+}
+
+.hero h1 span {
+  color: #FF3030;
+}
+
+.hero-description {
+  color: #A3A3A3;
+  font-size: 15px;
+  line-height: 1.8;
+  margin-top: 22px;
+  margin-bottom: 30px;
+  max-width: 430px;
+}
+
+.hero-button {
+  display: inline-block;
+  background: #FF3030;
+  color: #FFFFFF;
+  padding: 16px 22px;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 700;
+  transition: background 0.25s ease;
+}
+
+.hero-button:hover {
+  background: #FFD43B;
+  color: #080808;
+}
+
+/* Right side - Image */
+.hero-image {
+  flex: 1;
+  min-width: 0;
+  height: 520px;
+  overflow: hidden;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center 35%;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .hero {
+    gap: 20px;
+    padding: 50px 4%;
+    min-height: 550px;
+  }
+
+  .hero-text {
+    flex-basis: 48%;
+  }
+
+  .hero h1 {
+    font-size: clamp(42px, 5.5vw, 58px);
+  }
+
+  .hero-image {
+    height: 440px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 35px;
+    padding: 45px 6%;
+    min-height: auto;
+  }
+
+  .hero-text {
+    flex: none;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .hero-label {
+    font-size: 11px;
+    letter-spacing: 2px;
+    margin-bottom: 16px;
+  }
+
+  .hero h1 {
+    font-size: clamp(44px, 9vw, 62px);
+    line-height: 1;
+  }
+
+  .hero-description {
+    font-size: 14px;
+    margin-top: 18px;
+    margin-bottom: 24px;
+  }
+
+  .hero-button {
+    padding: 15px 18px;
+  }
+
+  .hero-image {
+    flex: none;
+    width: 100%;
+    height: 420px;
+  }
+}
+
+/* Small mobile */
+@media (max-width: 480px) {
+  .hero {
+    padding: 35px 5%;
+    gap: 28px;
+  }
+
+  .hero h1 {
+    font-size: 42px;
+  }
+
+  .hero-description {
+    font-size: 13px;
+    line-height: 1.7;
+  }
+
+  .hero-image {
+    height: 350px;
+  }
+}
