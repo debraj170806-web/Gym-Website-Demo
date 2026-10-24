@@ -24,7 +24,7 @@ function Pricing() {
           <p className="plan-name">MONTHLY</p>
 
           <h3>
-            ₹999<span>/month</span>
+            ₹799<span>/month</span>
           </h3>
 
           <p className="plan-description">
@@ -45,7 +45,7 @@ function Pricing() {
           <p className="plan-name">HALF YEARLY</p>
 
           <h3>
-            ₹7,499<span>/6 months</span>
+            ₹5,499<span>/6 months</span>
           </h3>
 
           <p className="plan-description">
@@ -67,7 +67,7 @@ function Pricing() {
           <p className="plan-name">YEARLY</p>
 
           <h3>
-            ₹13,999<span>/year</span>
+            ₹10,999<span>/year</span>
           </h3>
 
           <p className="plan-description">
