@@ -4,7 +4,7 @@ import "./Programs.css";
 import ST from "../../assets/ST.jpg";
 import PT from "../../assets/PT.jpg";
 import FT from "../../assets/FT.jpg";
-import Yoga from "../../assets/Yoga.jpg"; 
+import Yoga from "../../assets/yoga.jpg"; 
 
 function Programs() {
   return (
